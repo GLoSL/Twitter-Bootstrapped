@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Bootleg</title>
+    <style>.active { background-color: lightgrey; font-weight: bold; }</style>
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" title="no title">
+  </head>
+
+  <body ng-app="myApp">
+    <a ui-sref="login" ui-sref-active="active">Login</a>
+    <a ui-sref="feed" ui-sref-active="active">Feed</a>
+    <div ui-view></div>
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
